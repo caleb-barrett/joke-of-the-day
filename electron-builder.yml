@@ -1,0 +1,14 @@
+appId: com.unosquare.jokeoftheday
+productName: JokeOfTheDay
+directories:
+  output: dist
+files:
+  - out/**/*
+  - package.json
+win:
+  target: nsis
+nsis:
+  oneClick: true
+  perMachine: false
+  # First run after install registers the HKCU Run key (see README "Boot trigger").
+  runAfterFinish: true

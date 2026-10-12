@@ -1,0 +1,23 @@
+{
+  "name": "joke-of-the-day",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pops up a joke when you sign in to Windows.",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "dist": "electron-vite build && electron-builder --win"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "electron": "^44.7.0",
+    "electron-builder": "^26.5.0",
+    "electron-vite": "^5.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^6.4.4",
+    "vitest": "^5.0.4"
+  }
+}

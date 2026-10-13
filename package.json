@@ -9,7 +9,8 @@
     "build": "electron-vite build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "dist": "electron-vite build && electron-builder --win"
+    "dist": "electron-vite build && electron-builder --win",
+    "icon": "node scripts/generate-icon.mjs"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

@@ -2,13 +2,17 @@ appId: com.unosquare.jokeoftheday
 productName: JokeOfTheDay
 directories:
   output: dist
+  buildResources: resources
 files:
   - out/**/*
   - package.json
 win:
   target: nsis
+  icon: resources/icon.png
 nsis:
   oneClick: true
   perMachine: false
   # First run after install registers the HKCU Run key (see README "Boot trigger").
   runAfterFinish: true
+  # Removes that Run key entry on uninstall.
+  include: resources/installer.nsh

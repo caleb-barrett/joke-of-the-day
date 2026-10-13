@@ -10,6 +10,12 @@ async function showJoke(): Promise<void> {
   try {
     const joke = await window.jokeApi.getJoke();
     jokeText.textContent = joke.text;
+    if (joke.delivery) {
+      const delivery = document.createElement('em');
+      delivery.className = 'joke-delivery';
+      delivery.textContent = joke.delivery;
+      jokeText.append(delivery);
+    }
   } catch {
     jokeText.textContent = 'Could not load joke.';
   }

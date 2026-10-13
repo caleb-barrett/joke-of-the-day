@@ -19,6 +19,7 @@ export function createPopupWindow(): BrowserWindow {
     },
   });
 
+  popup.removeMenu();
   popup.once('ready-to-show', () => popup.show());
 
   const devServerUrl = process.env['ELECTRON_RENDERER_URL'];

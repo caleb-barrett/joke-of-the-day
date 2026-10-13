@@ -20,8 +20,9 @@ body {
   margin: 0;
   padding: 16px 18px;
   display: flex;
-  align-items: safe center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: safe center;
+  gap: 8px;
   overflow-y: auto;
   text-align: center;
   font-size: 17px;
@@ -33,6 +34,8 @@ body {
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.25);
   user-select: text;
 }
+
+.joke-delivery { font-style: italic; }
 
 #close-button {
   align-self: flex-end;
